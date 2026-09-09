@@ -1,0 +1,139 @@
+#### **Estación 2: Requerimientos**
+
+
+
+* **Objetivo:** Especificar el alcance del proyecto estático.
+
+* **Entregables:**
+
+* Redacción en el tablero de al menos 4 a 6 historias de usuario o tarjetas de tareas claras (ej. *"Como usuario quiero ver una galería de proyectos para conocer la experiencia del desarrollador"*).
+
+* Definición de las secciones fijas del sitio (Inicio, Sobre mí, Proyectos, Habilidades, Contacto).
+
+
+
+USO DE IA
+
+CHATGPT 3.6 THINKING
+
+PROMPT:
+estoy desarrollando un portafolio, usando la metodologia aprendizaje basado en estaciones, asume el rol de un profesor de frontend del MIT, realiza las tareas para cumplir con la estación 2, la cual detallo a continuación:
+Objetivo: Especificar el alcance del proyecto estático.
+
+Entregables:
+Redacción en el tablero de al menos 4 a 6 historias de usuario o tarjetas de tareas claras (ej. "Como usuario quiero ver una galería de proyectos para conocer la experiencia del desarrollador").
+Definición de las secciones fijas del sitio (Inicio, Sobre mí, Proyectos, Habilidades, Contacto).
+
+Genera la respuesta en formato html sugiriendo el
+Estación 2: Requerimientos
+
+OUTPUT:
+<article style="font-family: system-ui, -apple-system, sans-serif; max-width: 850px; margin: 0 auto; color: #1e293b; line-height: 1.5; padding: 1.5rem; border: 1px solid #e2e8f0; border-radius: 8px; background-color: #ffffff;">
+  
+  <header style="border-bottom: 2px solid #0f172a; padding-bottom: 1rem; margin-bottom: 2rem;">
+    <span style="background-color: #a31d1d; color: #ffffff; padding: 0.25rem 0.6rem; border-radius: 4px; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase;">MIT Frontend Lab</span>
+    <h1 style="margin: 0.5rem 0 0.25rem 0; font-size: 1.6rem; color: #0f172a;">Estación 2: Especificación de Requerimientos y Alcance</h1>
+    <p style="margin: 0; color: #64748b; font-size: 0.95rem;">Documentación semántica y backlog de tareas para la arquitectura del portafolio estático.</p>
+  </header>
+
+  <!-- Definición de Secciones Fijas -->
+  <section style="margin-bottom: 2.5rem;">
+    <h2 style="font-size: 1.2rem; color: #0f172a; border-left: 4px solid #a31d1d; padding-left: 0.5rem; margin-bottom: 1rem;">1. Estructura de Secciones Fijas</h2>
+    
+    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
+      <thead>
+        <tr style="background-color: #f8fafc; border-bottom: 2px solid #cbd5e1;">
+          <th style="padding: 0.6rem; border: 1px solid #cbd5e1; width: 20%;">Sección</th>
+          <th style="padding: 0.6rem; border: 1px solid #cbd5e1; width: 45%;">Objetivo UX / Arquitectura</th>
+          <th style="padding: 0.6rem; border: 1px solid #cbd5e1; width: 35%;">Componentes Semánticos (HTML5)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1; font-weight: 600;">Inicio</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;">Captar atención inmediata con propuesta de valor y rol principal.</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;"><code>&lt;header&gt;</code>, <code>&lt;h1&gt;</code>, titular dinámico, botones CTA.</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1; font-weight: 600;">Sobre mí</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;">Contextualizar trayectoria, filosofía de desarrollo y perfil profesional.</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;"><code>&lt;section&gt;</code>, <code>&lt;p&gt;</code>, enlace de descarga de CV, bio corta.</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1; font-weight: 600;">Proyectos</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;">Demostrar capacidad técnica funcional mediante trabajos previos.</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;">Grid de <code>&lt;article&gt;</code>, <code>&lt;img&gt;</code>, tags de tech y enlaces externos.</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1; font-weight: 600;">Habilidades</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;">Resumir visualmente el stack tecnológico clave sin saturar.</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;"><code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, badges/chips categorizados.</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1; font-weight: 600;">Contacto</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;">Facilitar vías directas de comunicación con reclutadores o clientes.</td>
+          <td style="padding: 0.6rem; border: 1px solid #cbd5e1;"><code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, enlaces sociales semánticos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Historias de Usuario / Tarjetas de Tareas -->
+  <section style="margin-bottom: 1.5rem;">
+    <h2 style="font-size: 1.2rem; color: #0f172a; border-left: 4px solid #a31d1d; padding-left: 0.5rem; margin-bottom: 1rem;">2. Tablero de Historias de Usuario (Sprint Backlog)</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      
+      <!-- Card 1 -->
+      <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.85rem; background-color: #f8fafc;">
+        <span style="font-size: 0.7rem; font-weight: 700; color: #1e40af; background: #dbeafe; padding: 0.15rem 0.4rem; border-radius: 3px;">US-01 | Alta</span>
+        <h3 style="margin: 0.4rem 0; font-size: 0.95rem; color: #0f172a;">Galería Interactiva de Proyectos</h3>
+        <p style="font-size: 0.85rem; color: #334155; margin: 0 0 0.5rem 0;"><strong>Como</strong> reclutador técnico, <strong>quiero</strong> explorar un catálogo visual con los proyectos destacados, <strong>para</strong> examinar el código fuente y las demos en vivo.</p>
+        <div style="font-size: 0.75rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 0.4rem;">
+          <strong>Criterio de aceptación:</strong> Layout tipo grid con mínimo 3 proyectos, enlaces funcionales a GitHub y despliegue activo.
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.85rem; background-color: #f8fafc;">
+        <span style="font-size: 0.7rem; font-weight: 700; color: #1e40af; background: #dbeafe; padding: 0.15rem 0.4rem; border-radius: 3px;">US-02 | Alta</span>
+        <h3 style="margin: 0.4rem 0; font-size: 0.95rem; color: #0f172a;">Navegación Fija y Fluida</h3>
+        <p style="font-size: 0.85rem; color: #334155; margin: 0 0 0.5rem 0;"><strong>Como</strong> visitante, <strong>quiero</strong> utilizar una barra de navegación accesible desde cualquier punto de la página, <strong>para</strong> moverme rápido entre secciones.</p>
+        <div style="font-size: 0.75rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 0.4rem;">
+          <strong>Criterio de aceptación:</strong> Menú con <code>position: sticky</code> o <code>fixed</code>, enlaces internos vinculados por IDs únicos y desplazamiento suave.
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.85rem; background-color: #f8fafc;">
+        <span style="font-size: 0.7rem; font-weight: 700; color: #854d0e; background: #fef9c3; padding: 0.15rem 0.4rem; border-radius: 3px;">US-03 | Media</span>
+        <h3 style="margin: 0.4rem 0; font-size: 0.95rem; color: #0f172a;">Desglose Categorizado de Stack</h3>
+        <p style="font-size: 0.85rem; color: #334155; margin: 0 0 0.5rem 0;"><strong>Como</strong> líder de ingeniería, <strong>quiero</strong> visualizar las tecnologías que domina el desarrollador por grupos (HTML, CSS, JS, Tools), <strong>para</strong> validar si calza con el equipo.</p>
+        <div style="font-size: 0.75rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 0.4rem;">
+          <strong>Criterio de aceptación:</strong> Lista ordenada por bloques temáticos con iconos o etiquetas legibles.
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.85rem; background-color: #f8fafc;">
+        <span style="font-size: 0.7rem; font-weight: 700; color: #1e40af; background: #dbeafe; padding: 0.15rem 0.4rem; border-radius: 3px;">US-04 | Alta</span>
+        <h3 style="margin: 0.4rem 0; font-size: 0.95rem; color: #0f172a;">Formulario de Contacto Directo</h3>
+        <p style="font-size: 0.85rem; color: #334155; margin: 0 0 0.5rem 0;"><strong>Como</strong> cliente potencial, <strong>quiero</strong> rellenar un formulario con mi correo y mensaje, <strong>para</strong> solicitar una entrevista o cotización formal.</p>
+        <div style="font-size: 0.75rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 0.4rem;">
+          <strong>Criterio de aceptación:</strong> Campos obligatorios (nombre, email, mensaje) validados mediante atributos nativos de HTML5.
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div style="border: 1px solid #cbd5e1; border-radius: 6px; padding: 0.85rem; background-color: #f8fafc;">
+        <span style="font-size: 0.7rem; font-weight: 700; color: #854d0e; background: #fef9c3; padding: 0.15rem 0.4rem; border-radius: 3px;">US-05 | Media</span>
+        <h3 style="margin: 0.4rem 0; font-size: 0.95rem; color: #0f172a;">Descarga Directa de Currículum</h3>
+        <p style="font-size: 0.85rem; color: #334155; margin: 0 0 0.5rem 0;"><strong>Como</strong> reclutador con tiempo limitado, <strong>quiero</strong> descargar la versión actualizada en PDF del CV mediante un botón claro, <strong>para</strong> archivarlo en el sistema ATS.</p>
+        <div style="font-size: 0.75rem; color: #64748b; border-top: 1px solid #e2e8f0; padding-top: 0.4rem;">
+          <strong>Criterio de aceptación:</strong> Enlace <code>&lt;a&gt;</code> con el atributo <code>download</code> hacia el documento PDF local.
+        </div>
+      </div>
+
+    </div>
+  </section>
+</article>
