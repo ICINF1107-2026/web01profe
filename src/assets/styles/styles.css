@@ -362,3 +362,32 @@ html {
     text-align: center;
   }
 }
+
+/* Utilidad para accesibilidad WAI-ARIA en formularios */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reset para fieldsets y listas en Skills y About */
+fieldset.skill-group {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+ul.tags, ul.skill-badges {
+  list-style: none;
+}

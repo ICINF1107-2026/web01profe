@@ -5,186 +5,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="assets/styles/styles.css" />
-    <!-- Lucide Icons para los iconos de botones y enlaces -->
+    <script src="assets/scripts/scripts.js"></script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <!-- STICKY NAVBAR -->
     <header class="navbar-header">
-      <nav class="navbar">
-        <div class="logo">[LOGO / NAME]</div>
-        <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">HOME</a></li>
+      <nav class="navbar" aria-label="Navegación principal">
+        <span class="logo" role="banner">[LOGO / NAME]</span>
+
+        <ul class="nav-links" role="list">
+          <li>
+            <a href="#hero" class="nav-link active" aria-current="page">HOME</a>
+          </li>
           <li><a href="#about" class="nav-link">ABOUT</a></li>
           <li><a href="#projects" class="nav-link">PROJECTS</a></li>
           <li><a href="#skills" class="nav-link">SKILLS</a></li>
           <li><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
-        <a href="#resume" class="btn btn-outline btn-sm">CTA: RESUME</a>
+
+        <a href="#resume" class="btn btn-outline btn-sm" role="button"
+          >CTA: RESUME</a
+        >
       </nav>
     </header>
 
     <main>
       <!-- 01. HERO SECTION -->
-      <section id="hero" class="section hero-section">
+      <section
+        id="hero"
+        class="section hero-section"
+        aria-labelledby="hero-heading"
+      >
         <div class="container hero-container">
-          <div class="profile-img-container">
-            <!-- Imagen de placeholder redonda -->
+          <figure class="profile-img-container">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_(35264).jpg/1280px-Raccoon_in_Central_Park_(35264).jpg"
-              alt="Profile Image"
+              alt="Fotografía de perfil del desarrollador"
               id="profile-img"
               class="profile-img"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+              aria-label="Activar efecto cómico de giro disco en la imagen de perfil"
             />
-          </div>
-          <div class="hero-content">
-            <h1>Hi, I'm [Developer Name]</h1>
+          </figure>
+
+          <header class="hero-content">
+            <h1 id="hero-heading">Hi, I'm [Developer Name]</h1>
             <p class="subtitle">
               Passionate Full Stack Developer | Building functional web
               applications
             </p>
-            <div class="hero-buttons">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+
+            <div
+              class="hero-buttons"
+              role="group"
+              aria-label="Acciones principales"
+            >
+              <a href="#projects" class="btn btn-primary" role="button"
+                >View Projects</a
+              >
+              <a href="#contact" class="btn btn-secondary" role="button"
+                >Contact Me</a
+              >
             </div>
-          </div>
+          </header>
         </div>
       </section>
 
       <!-- 02. ABOUT ME -->
-      <section id="about" class="section about-section">
+      <section
+        id="about"
+        class="section about-section"
+        aria-labelledby="about-heading"
+      >
         <div class="container">
-          <h2>01. About Me</h2>
+          <h2 id="about-heading">01. About Me</h2>
+
           <div class="about-grid">
-            <div class="about-bio">
+            <article class="about-bio">
               <p>
                 A modern developer focused on React, Node.js, and UX... (Bio
                 Placeholder text). In beam of the development anti-variable
                 commerce in Imarame. A modern developer focused on React,
                 Node.js, and UX... (Bio Placeholder text)
               </p>
-            </div>
-            <div class="about-details-card">
-              <h3>Details:</h3>
-              <p><strong>Location:</strong> Remote</p>
-              <p><strong>Experience:</strong> 5+ Years</p>
-              <p><strong>Stack:</strong> JS, Python</p>
-            </div>
+            </article>
+
+            <aside class="about-details-card" aria-labelledby="details-heading">
+              <h3 id="details-heading">Details:</h3>
+              <dl>
+                <dt><strong>Location:</strong></dt>
+                <dd>Remote</dd>
+                <dt><strong>Experience:</strong></dt>
+                <dd>5+ Years</dd>
+                <dt><strong>Stack:</strong></dt>
+                <dd>JS, Python</dd>
+              </dl>
+            </aside>
           </div>
         </div>
       </section>
 
       <!-- 03. MY PROJECTS -->
-      <section id="projects" class="section projects-section">
+      <section
+        id="projects"
+        class="section projects-section"
+        aria-labelledby="projects-heading"
+      >
         <div class="container">
-          <h2>03. My Projects</h2>
+          <h2 id="projects-heading">03. My Projects</h2>
+
           <div class="projects-grid">
-            <!-- Card Proyecto (Repetido 6 veces como en el wireframe) -->
-            <!-- Proyecto 1 -->
+            <!-- PROYECTO 1 -->
             <article class="project-card">
-              <div class="project-img-placeholder">PROJECT IMAGE</div>
+              <figure class="project-img-placeholder">
+                <figcaption>PROJECT IMAGE</figcaption>
+              </figure>
               <div class="project-info">
                 <h3>Project Title</h3>
                 <p>Short Description</p>
-                <div class="tags">
-                  <span class="badge">React</span>
-                  <span class="badge">Node</span>
-                  <span class="badge">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"><i data-lucide="external-link"></i> Live Demo</a>
-                  <a href="#"><i data-lucide="code"></i> Source Code</a>
-                </div>
+
+                <ul class="tags" aria-label="Tecnologías usadas">
+                  <li class="badge">React</li>
+                  <li class="badge">Node</li>
+                  <li class="badge">Firebase</li>
+                </ul>
+
+                <footer class="project-links">
+                  <a href="#" aria-label="Ver demostración en vivo del proyecto"
+                    ><i data-lucide="external-link" aria-hidden="true"></i> Live
+                    Demo</a
+                  >
+                  <a href="#" aria-label="Ver código fuente en GitHub"
+                    ><i data-lucide="code" aria-hidden="true"></i> Source
+                    Code</a
+                  >
+                </footer>
               </div>
             </article>
 
-            <!-- Proyecto 2 -->
+            <!-- PROYECTO 2 -->
             <article class="project-card">
-              <div class="project-img-placeholder">PROJECT IMAGE</div>
+              <figure class="project-img-placeholder">
+                <figcaption>PROJECT IMAGE</figcaption>
+              </figure>
               <div class="project-info">
                 <h3>Project Title</h3>
                 <p>Short Description</p>
-                <div class="tags">
-                  <span class="badge">React</span>
-                  <span class="badge">Node</span>
-                  <span class="badge">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"><i data-lucide="external-link"></i> Live Demo</a>
-                  <a href="#"><i data-lucide="code"></i> Source Code</a>
-                </div>
+
+                <ul class="tags" aria-label="Tecnologías usadas">
+                  <li class="badge">React</li>
+                  <li class="badge">Node</li>
+                  <li class="badge">Firebase</li>
+                </ul>
+
+                <footer class="project-links">
+                  <a href="#" aria-label="Ver demostración en vivo del proyecto"
+                    ><i data-lucide="external-link" aria-hidden="true"></i> Live
+                    Demo</a
+                  >
+                  <a href="#" aria-label="Ver código fuente en GitHub"
+                    ><i data-lucide="code" aria-hidden="true"></i> Source
+                    Code</a
+                  >
+                </footer>
               </div>
             </article>
 
-            <!-- Proyecto 3 -->
+            <!-- PROYECTO 3 -->
             <article class="project-card">
-              <div class="project-img-placeholder">PROJECT IMAGE</div>
+              <figure class="project-img-placeholder">
+                <figcaption>PROJECT IMAGE</figcaption>
+              </figure>
               <div class="project-info">
                 <h3>Project Title</h3>
                 <p>Short Description</p>
-                <div class="tags">
-                  <span class="badge">React</span>
-                  <span class="badge">Node</span>
-                  <span class="badge">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"><i data-lucide="external-link"></i> Live Demo</a>
-                  <a href="#"><i data-lucide="code"></i> Source Code</a>
-                </div>
+
+                <ul class="tags" aria-label="Tecnologías usadas">
+                  <li class="badge">React</li>
+                  <li class="badge">Node</li>
+                  <li class="badge">Firebase</li>
+                </ul>
+
+                <footer class="project-links">
+                  <a href="#" aria-label="Ver demostración en vivo del proyecto"
+                    ><i data-lucide="external-link" aria-hidden="true"></i> Live
+                    Demo</a
+                  >
+                  <a href="#" aria-label="Ver código fuente en GitHub"
+                    ><i data-lucide="code" aria-hidden="true"></i> Source
+                    Code</a
+                  >
+                </footer>
               </div>
             </article>
 
-            <!-- Proyecto 4 -->
+            <!-- PROYECTO 4 -->
             <article class="project-card">
-              <div class="project-img-placeholder">PROJECT IMAGE</div>
+              <figure class="project-img-placeholder">
+                <figcaption>PROJECT IMAGE</figcaption>
+              </figure>
               <div class="project-info">
                 <h3>Project Title</h3>
                 <p>Short Description</p>
-                <div class="tags">
-                  <span class="badge">React</span>
-                  <span class="badge">Node</span>
-                  <span class="badge">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"><i data-lucide="external-link"></i> Live Demo</a>
-                  <a href="#"><i data-lucide="code"></i> Source Code</a>
-                </div>
+
+                <ul class="tags" aria-label="Tecnologías usadas">
+                  <li class="badge">React</li>
+                  <li class="badge">Node</li>
+                  <li class="badge">Firebase</li>
+                </ul>
+
+                <footer class="project-links">
+                  <a href="#" aria-label="Ver demostración en vivo del proyecto"
+                    ><i data-lucide="external-link" aria-hidden="true"></i> Live
+                    Demo</a
+                  >
+                  <a href="#" aria-label="Ver código fuente en GitHub"
+                    ><i data-lucide="code" aria-hidden="true"></i> Source
+                    Code</a
+                  >
+                </footer>
               </div>
             </article>
 
-            <!-- Proyecto 5 -->
+            <!-- PROYECTO 5 -->
             <article class="project-card">
-              <div class="project-img-placeholder">PROJECT IMAGE</div>
+              <figure class="project-img-placeholder">
+                <figcaption>PROJECT IMAGE</figcaption>
+              </figure>
               <div class="project-info">
                 <h3>Project Title</h3>
                 <p>Short Description</p>
-                <div class="tags">
-                  <span class="badge">React</span>
-                  <span class="badge">Node</span>
-                  <span class="badge">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"><i data-lucide="external-link"></i> Live Demo</a>
-                  <a href="#"><i data-lucide="code"></i> Source Code</a>
-                </div>
+
+                <ul class="tags" aria-label="Tecnologías usadas">
+                  <li class="badge">React</li>
+                  <li class="badge">Node</li>
+                  <li class="badge">Firebase</li>
+                </ul>
+
+                <footer class="project-links">
+                  <a href="#" aria-label="Ver demostración en vivo del proyecto"
+                    ><i data-lucide="external-link" aria-hidden="true"></i> Live
+                    Demo</a
+                  >
+                  <a href="#" aria-label="Ver código fuente en GitHub"
+                    ><i data-lucide="code" aria-hidden="true"></i> Source
+                    Code</a
+                  >
+                </footer>
               </div>
             </article>
 
-            <!-- Proyecto 6 -->
+            <!-- PROYECTO 6 -->
             <article class="project-card">
-              <div class="project-img-placeholder">PROJECT IMAGE</div>
+              <figure class="project-img-placeholder">
+                <figcaption>PROJECT IMAGE</figcaption>
+              </figure>
               <div class="project-info">
                 <h3>Project Title</h3>
                 <p>Short Description</p>
-                <div class="tags">
-                  <span class="badge">React</span>
-                  <span class="badge">Node</span>
-                  <span class="badge">Firebase</span>
-                </div>
-                <div class="project-links">
-                  <a href="#"><i data-lucide="external-link"></i> Live Demo</a>
-                  <a href="#"><i data-lucide="code"></i> Source Code</a>
-                </div>
+
+                <ul class="tags" aria-label="Tecnologías usadas">
+                  <li class="badge">React</li>
+                  <li class="badge">Node</li>
+                  <li class="badge">Firebase</li>
+                </ul>
+
+                <footer class="project-links">
+                  <a href="#" aria-label="Ver demostración en vivo del proyecto"
+                    ><i data-lucide="external-link" aria-hidden="true"></i> Live
+                    Demo</a
+                  >
+                  <a href="#" aria-label="Ver código fuente en GitHub"
+                    ><i data-lucide="code" aria-hidden="true"></i> Source
+                    Code</a
+                  >
+                </footer>
               </div>
             </article>
           </div>
@@ -192,56 +291,126 @@
       </section>
 
       <!-- 04. TECH STACK & SKILLS -->
-      <section id="skills" class="section skills-section">
+      <section
+        id="skills"
+        class="section skills-section"
+        aria-labelledby="skills-heading"
+      >
         <div class="container">
-          <h2>04. TECH STACK & SKILLS</h2>
+          <h2 id="skills-heading">04. TECH STACK & SKILLS</h2>
+
           <div class="skills-grid">
-            <div class="skill-group">
-              <h3>[FRONTEND]</h3>
-              <div class="skill-badges">
-                <span class="badge">React</span>
-                <span class="badge">TS</span>
-                <span class="badge">Vue</span>
-                <span class="badge">SKILL BADGE</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h3>[BACKEND]</h3>
-              <div class="skill-badges">
-                <span class="badge">SKILL BADGE</span>
-                <span class="badge">SKILL BADGE</span>
-                <span class="badge">SKILL BADGE</span>
-                <span class="badge">Git</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <h3>[TOOLS]</h3>
-              <div class="skill-badges">
-                <span class="badge">SKILL BADGE</span>
-                <span class="badge">SKILL BADGE</span>
-                <span class="badge">AWS</span>
-                <span class="badge">Python</span>
-              </div>
-            </div>
+            <fieldset
+              class="skill-group"
+              role="group"
+              aria-labelledby="skill-frontend"
+            >
+              <legend id="skill-frontend">[FRONTEND]</legend>
+              <ul class="skill-badges">
+                <li class="badge">React</li>
+                <li class="badge">TS</li>
+                <li class="badge">Vue</li>
+                <li class="badge">SKILL BADGE</li>
+              </ul>
+            </fieldset>
+
+            <fieldset
+              class="skill-group"
+              role="group"
+              aria-labelledby="skill-backend"
+            >
+              <legend id="skill-backend">[BACKEND]</legend>
+              <ul class="skill-badges">
+                <li class="badge">SKILL BADGE</li>
+                <li class="badge">SKILL BADGE</li>
+                <li class="badge">SKILL BADGE</li>
+                <li class="badge">Git</li>
+              </ul>
+            </fieldset>
+
+            <fieldset
+              class="skill-group"
+              role="group"
+              aria-labelledby="skill-tools"
+            >
+              <legend id="skill-tools">[TOOLS]</legend>
+              <ul class="skill-badges">
+                <li class="badge">SKILL BADGE</li>
+                <li class="badge">SKILL BADGE</li>
+                <li class="badge">AWS</li>
+                <li class="badge">Python</li>
+              </ul>
+            </fieldset>
           </div>
         </div>
       </section>
 
       <!-- 05. CONTACT ME -->
-      <section id="contact" class="section contact-section">
+      <section
+        id="contact"
+        class="section contact-section"
+        aria-labelledby="contact-heading"
+      >
         <div class="container">
-          <h2>04. Get In Touch</h2>
+          <h2 id="contact-heading">04. Get In Touch</h2>
+
           <div class="contact-grid">
-            <div class="contact-text">
-              <p>Have a question or project idea? Send me a message.</p>
-            </div>
-            <form class="contact-form">
+            <p class="contact-text">
+              Have a question or project idea? Send me a message.
+            </p>
+
+            <form class="contact-form" aria-label="Formulario de contacto">
               <div class="form-row">
-                <input type="text" placeholder="Name" required />
-                <input type="email" placeholder="Email" required />
+                <div class="field-container">
+                  <label for="name" class="visually-hidden">Nombre</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                    aria-required="true"
+                  />
+                </div>
+                <div class="field-container">
+                  <label for="email" class="visually-hidden"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    aria-required="true"
+                  />
+                </div>
               </div>
-              <input type="text" placeholder="Subject" required />
-              <textarea placeholder="Message" rows="5" required></textarea>
+
+              <div class="field-container">
+                <label for="subject" class="visually-hidden">Asunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                  aria-required="true"
+                />
+              </div>
+
+              <div class="field-container">
+                <label for="message" class="visually-hidden">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                  aria-required="true"
+                ></textarea>
+              </div>
+
               <button type="submit" class="btn btn-full">SEND MESSAGE</button>
             </form>
           </div>
@@ -253,15 +422,17 @@
     <footer class="footer">
       <div class="container footer-container">
         <p>&copy; 2024 Developer Portfolio</p>
-        <div class="footer-links">
-          <a href="#">GitHub</a> | <a href="#">LinkedIn</a> |
-          <a href="#">Email</a>
-        </div>
+
+        <nav class="footer-links" aria-label="Enlaces a redes sociales">
+          <a href="#" aria-label="Perfil de GitHub">GitHub</a> |
+          <a href="#" aria-label="Perfil de LinkedIn">LinkedIn</a> |
+          <a href="#" aria-label="Enviar correo electrónico">Email</a>
+        </nav>
+
         <a href="#" class="privacy-link">Privacy Policy</a>
       </div>
     </footer>
 
-    <script src="assets/scripts/script.js"></script>
     <script>
       lucide.createIcons();
     </script>
