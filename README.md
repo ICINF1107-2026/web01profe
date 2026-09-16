@@ -17,11 +17,11 @@ Plantilla base de un **Developer Portfolio** desarrollada con HTML, CSS y JavaSc
 ├── assets/
 │   ├── styles/
 │   └── scripts/
-├── docs/
-├── estacion1.md
-├── estacion2.md
-├── estacion3.md
-└── estacion4.md
+└── docs/
+    ├── estacion1.md
+    ├── estacion2.md
+    ├── estacion3.md
+    └── estacion4.md
 ```
 
 ## Inicio rápido
