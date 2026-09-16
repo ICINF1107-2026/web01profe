@@ -9,6 +9,7 @@ Plantilla base de un **Developer Portfolio** desarrollada con HTML, CSS y JavaSc
 | GitHub Pages | https://icinf1107-2026.github.io/web01profe/ |
 | Vercel | https://web01profe.vercel.app/ |
 | Render | https://web01profe.onrender.com |
+| Netlify | https://web01profe.netlify.app/ |
 
 ## Estructura
 
